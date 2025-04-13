@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: application-from-scratch
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/tmiklu/argocd.git
+    targetRevision: HEAD
+    path: v3-application/helm/nginx
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
