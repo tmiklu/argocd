@@ -6,6 +6,8 @@ metadata:
 spec:
   project: default
   source:
+    helm:
+      releaseName: abc
     repoURL: https://github.com/tmiklu/argocd.git
     targetRevision: HEAD
     path: v3-application/helm/nginx
