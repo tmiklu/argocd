@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     helm:
-      releaseName: abc
+      releaseName: application-from-helm
     repoURL: https://github.com/tmiklu/argocd.git
     targetRevision: HEAD
     path: v3-application/helm/nginx
