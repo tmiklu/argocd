@@ -31,6 +31,8 @@ spec:
           crds:
             enabled: true
             keep: true
+          podAnnotations:
+            abc: def
     #- repoURL: 'https://github.com/daltontx/k8s-pharmaron.git'
     #  path: apps/cert-manager/base/issuer
     #  targetRevision: main
